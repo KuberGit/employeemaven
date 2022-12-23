@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 public class EmployeeTest {
     @Test
     public void sayHello() throws SQLException, IOException, ClassNotFoundException {
-        EmployeeApi api = new EmployeeApi();
+        EmployeeJdbcApi api = new EmployeeJdbcApi();
         api.delete();
         api.insert();
         ResultSet rs = api.select();

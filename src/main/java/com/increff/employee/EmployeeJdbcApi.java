@@ -10,16 +10,14 @@ import java.util.Properties;
 import java.util.logging.Logger;
 
 
-public class EmployeeApi {
+public class EmployeeJdbcApi {
 
-    private static final Logger logger = Logger.getLogger(String.valueOf(EmployeeApi.class));
+    private static final Logger logger = Logger.getLogger(String.valueOf(EmployeeJdbcApi.class));
 
     private Connection con;
-    public static void main(String[] args) throws SQLException, ClassNotFoundException, IOException {
 
-    }
 
-    public EmployeeApi() throws IOException, ClassNotFoundException, SQLException {
+    public EmployeeJdbcApi() throws IOException, ClassNotFoundException, SQLException {
         Properties props = new Properties();
         InputStream inStream = Files.newInputStream(Paths.get("employee.properties"));
         props.load(inStream);
